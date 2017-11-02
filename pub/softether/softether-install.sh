@@ -46,6 +46,7 @@ esac
 if [ -e '/usr/bin/wget' ]; then
     wget https://aponkral.github.io/pub/softether/softether-install-$type.sh -O softether-install-$type.sh
     if [ "$?" -eq '0' ]; then
+        chmod +x softether-install-$type.sh
         bash softether-install-$type.sh $*
         exit
     else
@@ -58,6 +59,7 @@ fi
 if [ -e '/usr/bin/curl' ]; then
     curl -O https://aponkral.github.io/pub/softether/softether-install-$type.sh
     if [ "$?" -eq '0' ]; then
+        chmod +x softether-install-$type.sh
         bash softether-install-$type.sh $*
         exit
     else
