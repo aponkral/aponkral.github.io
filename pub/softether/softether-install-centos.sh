@@ -5,10 +5,10 @@ case $response in
 echo "Updating the system first..."
 yum update
 yum groupinstall "Development Tools" -y && yum install kernel-devel -y && yum install wget -y
-echo "Downloading last stable release: 4.24"
+echo "Downloading last stable release: 4.25"
 sleep 2
-wget http://softether-download.com/files/softether/v4.24-9651-beta-2017.10.23-tree/Linux/SoftEther_VPN_Server/64bit_-_Intel_x64_or_AMD64/softether-vpnserver-v4.24-9651-beta-2017.10.23-linux-x64-64bit.tar.gz
-tar -xzf softether-vpnserver-v4.24-9651-beta-2017.10.23-linux-x64-64bit.tar.gz
+wget http://softether-download.com/files/softether/v4.25-9656-rtm-2018.01.15-tree/Linux/SoftEther_VPN_Server/64bit_-_Intel_x64_or_AMD64/softether-vpnserver-v4.25-9656-rtm-2018.01.15-linux-x64-64bit.tar.gz
+tar -xzf softether-vpnserver-v4.25-9656-rtm-2018.01.15-linux-x64-64bit.tar.gz
 cd vpnserver
 echo "Please press 1 for all the following questions."
 sleep 1
